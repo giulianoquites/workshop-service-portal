@@ -16,4 +16,6 @@
         count: "{{ instance_count }}"
         wait: yes
         vpc_subnet_id: "{{ subnet }}" 
+        tags:
+          Environment: Testing
       register: ec2_info
