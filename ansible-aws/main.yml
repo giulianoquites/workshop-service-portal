@@ -15,5 +15,5 @@
         security_group: "{{ security_group_name }}"
         count: "{{ instance_count }}"
         wait: yes
-        vpc_subnet_id: subnet-08d12b6272daf9481 # Optional: specify a subnet
+        vpc_subnet_id: "{{ subnet }}" 
       register: ec2_info
