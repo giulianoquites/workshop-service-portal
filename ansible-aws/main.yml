@@ -3,8 +3,8 @@
   hosts: localhost
   connection: local
   gather_facts: no
-
-
+  vars:
+    RHEL10: ami-0912d5cf1d5dff99c
   tasks:
     - name: Create EC2 instances
       amazon.aws.ec2_instance:
